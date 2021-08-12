@@ -1,0 +1,9 @@
+@font-face 
+{
+    font-family: "Raleway";
+    src: url("static/Raleway-VariableFont_wght.ttf");
+}
+body
+{
+    font-family: "Raleway",sans-serif;
+}
