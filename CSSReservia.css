@@ -76,43 +76,132 @@ header {
 }
 
 
+/* Main*/
 
-
-footer{
-    background-color:#F2F2F2 ;
-    display: grid;
-    grid-template: "about"
-                    "accomodation"
-                    "assistant"; 
-    padding-left: 40px;  
-    padding-bottom: 20px;  
-    padding-top: 10px; 
-    grid-template: repeat(1,auto)/repeat(3,1fr);
-    grid-column-gap: 10px 
+.titre_principale{
+    font-size: 23px;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+.subtitle{
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+.zone_search{
+display: inline-flex;
+flex-direction: row;
+margin-left: 20px ;
+margin-bottom:35px ;
+height: 49px;
+width: 290px;
+border: #F2F2F2 solid 1px;
+border-radius:14px ;
+}
+#search{
+ display: none;
+}
+input:focus{
+    outline: none;
+}
+input{
+    font-family: "raleway", sans-serif;
+    font-weight: bold;
+    flex: 1;
+    padding-left: 16px;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+}
+#gps{
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F2F2F2;
+  border-radius: 14px 0 0 14px; 
+}
+.button-search{
+    background-color:  #0065FC;
+    color: white;
+    width: 50px;
+    border-radius: 14px 14px 14px 14px;
+    cursor: pointer;
+    border: none;
 }
 
-.title_footer{
-    padding-top: 25px;
-    padding-bottom: 25px;
+.filtre{
+ padding-left: 20px;
 }
-.list{
-    padding-inline-start: 0px;
+.title_filtre{
+    padding-bottom: 20px;   
 }
-.list-info{
-    padding-bottom: 15px;
+.button-filtre{   
+    background-color:#DEEBFF ;
+    padding: 10px;
+    border-radius: 50%;
+    line-height: 20px;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    text-align: center;
+    color:#0065FC ;
+    margin-right: 10px;
+}
+.filtre_button{
+    padding-inline-start:0px ;
     list-style-type: none;
-    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    font-weight: bold;
 }
-.list-info > a{
-text-decoration: none;
-color: black;
+.bar-filtre{
+    border: solid 2px #F2F2F2;
+    border-radius: 50px;
+    border-left: none;
+    margin-right: 10px;
+    padding-right: 10px;
+    margin-bottom: 12px;
+    flex-shrink: 0;
 }
-@media screen and (min-width:992px){
+.bar-filtre:hover{
+    color: black;
+    background-color:#F2F2F2;
+    cursor: pointer;
 
-}
+    /* footer */
 
-
-
-
+    footer {
+        background-color:#F2F2F2 ;
+        display: grid;
+        grid-template: "about"
+                        "accomodation"
+                        "assistant"; 
+        padding-left: 40px;  
+        padding-bottom: 20px;  
+        padding-top: 10px; 
+        grid-template: repeat(1,auto)/repeat(3,1fr);
+        grid-column-gap: 10px 
+    }
     
+    .title_footer{
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .list{
+        padding-inline-start: 0px;
+    }
+    .list-info{
+        padding-bottom: 15px;
+        list-style-type: none;
+        
+    }
+    .list-info > a{
+    text-decoration: none;
+    color: black;
+    }
+    @media screen and (min-width:992px){
     
+    }
