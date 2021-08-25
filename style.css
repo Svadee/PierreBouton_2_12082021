@@ -53,7 +53,7 @@ header {
     color: #0065FC ;
 }
 @media screen and (min-width:768px){
-  /*breakpoint tablette*/
+  /*tablette*/
     header {
         grid-template:"top-left top top top-right" 110px / auto 165px 165px 110px;
     }
@@ -75,6 +75,7 @@ header {
     }
 }
 @media screen and (min-width:992px){
+    /*Desktop*/
     header{
         padding-right: 25px;
         padding-left: 25px;
