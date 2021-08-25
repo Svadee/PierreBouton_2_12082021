@@ -12,7 +12,7 @@
  }
         
   /*Header Partie mobile*/
-header { 
+header {
     display: grid;
     grid-template:"top-left  top-right" 110px
                   "bottom  bottom"  35px ;
@@ -53,7 +53,7 @@ header {
     color: #0065FC ;
 }
 @media screen and (min-width:768px){
-  /*tablette*/
+  /*breakpoint tablette*/
     header {
         grid-template:"top-left top top top-right" 110px / auto 165px 165px 110px;
     }
@@ -74,16 +74,9 @@ header {
         color: #0065FC ;
     }
 }
-@media screen and (min-width:768px){
-    .singup{padding-right: 20px;}
-    #logo{padding-left: 20px;}
-}
 @media screen and (min-width:992px){
-    /*DEsKTOP*/
-    .singup{
+    header{
         padding-right: 25px;
-    }
-    #logo{
         padding-left: 25px;
     }
 }
