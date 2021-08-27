@@ -11,7 +11,7 @@
  
  }
         
-  /*Header Partie mobile*/
+  /*Header mobile*/
 header {
     display: grid;
     grid-template:"top-left  top-right" 110px
@@ -84,9 +84,9 @@ header {
 
 /*Main*/
 
-/* Main partie mobile*/
+/* mobile*/
 
-/* zone search partie mobile*/
+/* search mobile*/
 .titre_principale{
     font-size: 23px;
     padding-left: 20px;
@@ -139,7 +139,7 @@ input{
     cursor: pointer;
     border: none;
 }
-/*filtre partie mobile*/
+/*filtre mobile*/
 
 .filtre{
  padding-left: 20px;
@@ -182,7 +182,7 @@ input{
     background-color:#F2F2F2;
     cursor: pointer;
 }
-/*info partie mobile */
+/*info mobile */
 
 .icone-info{
     border: solid 2px #F2F2F2;
@@ -204,7 +204,7 @@ input{
     padding-bottom: 30px;    
 }
 
-/* aside partie mobile*/
+/* aside mobile*/
 
 aside{
     background-color:#F2F2F2 ;
@@ -271,7 +271,7 @@ aside{
 .star-def{
     color:#D9D9D9 ;
 }
-/*section_1 partie mobile*/
+/*section_1 mobile*/
 
 .section_1{
     background-color: white;
@@ -322,7 +322,7 @@ aside{
 .show-more{padding-top: 15px;
     }
 
-/* section_2 partie mobile*/
+/* section_2 mobile*/
 
 .section_2{
     margin-bottom: 40px;
@@ -358,7 +358,7 @@ aside{
     
     /*tablette*/ 
 
-    /*aside partie tablette*/
+    /*aside tablette*/
 aside{
     display: grid;
     grid-template: repeat(2,auto)/repeat(3,1fr);  
@@ -436,13 +436,13 @@ aside{
 }
 }
 @media screen and (min-width:992px){
-    /*desktop et desktop large*/
+    /*desktop */
     main{
         padding-left: 25px;
         padding-right: 25px;
         
     }
-    /*zone search partie desktop et desktop large*/
+    /*search desktop */
     .searching{
         display: none;
     }
@@ -458,7 +458,7 @@ aside{
         font-size: 17px;
         font-weight: bold;
     }
-    /*bar filtre partie desktop et desktop large*/
+    /*bar filtre desktop */
     .filtre{
         display: flex;
         align-items: center;
@@ -466,7 +466,7 @@ aside{
     .title_filtre{
         padding-right: 10px;
     }
-    /*aside desktop et desktop large*/
+    /*aside desktop */
     .titre_principale{
         padding-left: 0px;
     }
@@ -507,7 +507,7 @@ aside{
     .icon_chart{
        align-content: flex-end;
     }
-    /*section_1 partie desktop et desktop large*/
+    /*section_1 desktop*/
     .section_1{
         margin-top: 0px;
         height:600px;
@@ -540,7 +540,7 @@ aside{
     .title_3{
         font-size: 13px;
     }
-    /*section_2 partie desktop et desktop large */ 
+    /*section2 desktop */ 
     .section_2{
         display: grid;
         grid-template: repeat(3,auto)/repeat(4,1fr);  
@@ -595,5 +595,41 @@ aside{
         grid-row: 3;
         grid-column: 4;
         height: 208px; 
+    }
+}
+
+/* footer*/
+footer{
+    background-color:white ;
+    display: grid;
+    grid-template: "about"
+                    "accomodation"
+                    "assistant"; 
+    padding-left: 40px;  
+    padding-bottom: 20px;  
+    padding-top: 10px;             
+}
+
+.title_footer{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.list{
+    padding-inline-start: 0px;
+}
+.list-info{
+    padding-bottom: 15px;
+    list-style-type: none;
+    
+}
+.list-info > a{
+text-decoration: none;
+color: black;
+}
+@media screen and (min-width:768px){
+
+    footer{
+        grid-template: repeat(1,auto)/repeat(3,1fr);
+        grid-column-gap: 10px;
     }
 }
