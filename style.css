@@ -1,15 +1,15 @@
-        
- *{margin: 0px ; padding: 0px;}
- a{text-decoration: none;
-     color: black;}
- body{
-     font-family: 'raleway', sans-serif;
-    margin: 0px;
-    text-decoration: none;
-      display: grid;
-     grid-template:  repeat(3,auto)/repeat(1,auto);
- 
- }
+*{margin: 0px ; padding: 0px;}
+a{text-decoration: none;
+    color: black;}
+body{
+    font-family: 'raleway', sans-serif;
+   margin: auto;
+   width: 80%;
+   text-decoration: none;
+     display: grid;
+    grid-template:  repeat(3,auto)/repeat(1,auto);
+
+}
         
   /*Header mobile*/
 header {
@@ -30,7 +30,7 @@ header {
     padding-top: 45px;
     padding-right: 22px;  
 }
-#sinscrire {  
+#sinscrire { 
     text-decoration: none;
     color:#0065FC;
     font-weight: bold;
@@ -576,7 +576,7 @@ aside{
      grid-column: 2 ;    
      align-self: flex-end;
     height : 172px;
-    }
+    } 
     #activity_4{
         grid-column: 3;
         grid-row: 2 /4;
